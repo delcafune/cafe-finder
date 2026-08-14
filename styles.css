@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5ead7;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+        font-family:"Playfair Display", serif;
+}
+
+button {
+    font-size: 20px;
+    padding: 12px 20px;
+    background-color: #6f4e37;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    margin: 5px;
+}
