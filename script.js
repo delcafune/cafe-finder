@@ -1,5 +1,14 @@
 function getLocation() {
-    navigator.geolocation.getCurrentPosition(showPosition);
+    const cards = document.querySelector(".cards");
+    cards.innerHTML = "<p>Finding cafes near you... ☕</p>";
+
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+}
+
+function showError(error) {
+    const cards = document.querySelector(".cards");
+
+    cards.innerHTML = "<p>Unable to get your location. Please allow location access and try again.</p>";
 }
 
 async function showPosition(position) {
@@ -94,6 +103,11 @@ function showSaved() {
     const cards = document.querySelector(".cards");
 
     cards.innerHTML = "";
+
+    if (savedCafes.length === 0) {
+        cards.innerHTML = "<p>No saved cafes yet ☕</p>";
+        return;
+    }
 
     savedCafes.forEach(cafe => {
         cards.innerHTML += `
