@@ -47,3 +47,26 @@ button {
     font-size: 16px;
     padding: 10px 16px;
 }
+
+button:hover {
+    background-color: #5a3d2b;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .cafe-photo {
+        height: 180px;
+    }
+}
