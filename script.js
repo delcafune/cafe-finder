@@ -40,6 +40,7 @@ async function showPosition(position) {
         },
         includedPrimaryTypes: ["cafe"],
         maxResultCount: 10,
+        rankPreference: "DISTANCE"
     };
 
     const { places } = await Place.searchNearby(request);
