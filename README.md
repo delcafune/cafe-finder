@@ -1,12 +1,16 @@
 # ☕ Cafe Curator
 
-Cafe Curator is a web app that helps users discover cafes near their current location and save their favorites.
+Cafe Curator is a responsive web application that helps users discover cafes near their current location and save their favorites.
 
-## Features
+## 🌐 Live Demo
+
+https://delcafune.github.io/cafe-finder/
+
+## ✨ Features
 
 - 📍 Finds cafes near the user's current location
 - 📸 Displays cafe photos
-- ⭐ Shows ratings and addresses
+- ⭐ Shows Google ratings and addresses
 - ❤️ Saves favorite cafes
 - 🚫 Prevents duplicate saves
 - 🗑️ Removes saved cafes
@@ -14,17 +18,7 @@ Cafe Curator is a web app that helps users discover cafes near their current loc
 - 📱 Responsive design for desktop and mobile
 - ⚠️ Handles location permission errors
 
-## How It Works
-
-1. Click **Find Cafes Near Me**.
-2. Allow the browser to access your location.
-3. Cafe Curator searches for cafes within a 2 km radius.
-4. Nearby cafes are displayed with their photo, name, address, and rating.
-5. Click **Save Cafe** to save a cafe.
-6. Click **Show Saved Cafes** to view your saved cafes.
-7. Saved cafes can also be removed.
-
-## Built With
+## 🛠️ Built With
 
 - HTML
 - CSS
@@ -34,10 +28,20 @@ Cafe Curator is a web app that helps users discover cafes near their current loc
 - Browser Geolocation API
 - localStorage
 
-## Privacy
+## 🔎 How It Works
 
-Cafe Curator uses your browser's geolocation to search for nearby cafes. Your location is not stored by the application.
+1. Click **Find Cafes Near Me**.
+2. Allow the browser to access your location.
+3. Cafe Curator searches for cafes within a 2 km radius.
+4. Nearby cafes are displayed with their photo, name, address, and rating.
+5. Click **Save Cafe** to save a cafe.
+6. Click **Show Saved Cafes** to view your saved cafes.
+7. Saved cafes can also be removed.
 
-## Author
+## 🔒 Privacy
+
+Cafe Curator uses browser geolocation to search for nearby cafes. The application does not store the user's location.
+
+## 👩‍💻 Author
 
 Built as a personal web development project.
