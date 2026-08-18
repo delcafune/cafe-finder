@@ -8,9 +8,15 @@ function getLocation() {
 function showError(error) {
     const cards = document.querySelector(".cards");
 
-    cards.innerHTML = `<p>Location error ${error.code}: ${error.message}</p>`;
-
-    console.log("Location error:", error);
+    if (error.code === 1) {
+        cards.innerHTML = "<p>Location access was denied. Please allow location access and try again.</p>";
+    } else if (error.code === 2) {
+        cards.innerHTML = "<p>Your location is currently unavailable. Please try again.</p>";
+    } else if (error.code === 3) {
+        cards.innerHTML = "<p>Getting your location took too long. Please try again.</p>;"
+    } else {
+        cards.innerHTML = "<p>Unable to get your location. Please try again.</p>;"
+    }
 }
 
 async function showPosition(position) {
