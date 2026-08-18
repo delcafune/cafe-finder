@@ -8,7 +8,9 @@ function getLocation() {
 function showError(error) {
     const cards = document.querySelector(".cards");
 
-    cards.innerHTML = "<p>Unable to get your location. Please allow location access and try again.</p>";
+    cards.innerHTML = `<p>Location error ${error.code}: ${error.message}</p>`;
+
+    console.log("Location error:", error);
 }
 
 async function showPosition(position) {
