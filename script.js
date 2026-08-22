@@ -81,19 +81,6 @@ function showCafe() {
             <h3>${cafeName}</h3>
             <p>📍 ${cafeAddress}</p>
             <p>⭐ ${cafeRating ?? "No rating yet"}</p>
-
-            <button class="save-btn" onclick='saveCafe(${JSON.stringify({
-                name: cafeName,
-                address: cafeAddress,
-                rating: cafeRating,
-                photo: photoURL
-            })})'>
-                Save Cafe
-            </button>
-
-            <button class="skip-btn" onclick="nextCafe()">
-                Skip Cafe
-            </button>
         </div>
     `;
     setupSwipe();
@@ -161,6 +148,14 @@ function setupSwipe() {
             card.style.transition = "transform 180ms cubic-bezier(0.22, 0.61, 0.36, 1)";
             card.style.transform = "translateX(0) rotate(0deg)";
         }
+    });
+    card.addEventListener("pointercancel", () => {
+        dragging = false;
+
+        card.style.transition =
+            "transform 180ms cubic-bezier(0.22, 0.61, 0.36, 1)";
+        
+        card.style.transform = "translateX(0) rotate(0deg)";
     });
 }
 

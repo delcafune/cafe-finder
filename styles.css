@@ -3,6 +3,7 @@ body {
     padding: 2rem;
     background-color: #f5ead7;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -25,6 +26,7 @@ button {
     margin: 15px auto;
     padding: 15px;
     border-radius: 12px;
+    touch-action: pan-y;
 }
 
 .cafe-photo {
