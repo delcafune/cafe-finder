@@ -8,14 +8,14 @@ https://delcafune.github.io/cafe-finder/
 
 ## ✨ Features
 
-- 📍 Finds cafes near the user's current location
-- 📸 Displays cafe photos
-- ⭐ Shows Google ratings and addresses
-- ❤️ Saves favorite cafes
+- 📍 Finds nearby cafes using browser geolocation
+- 📸 Displays cafe photos, ratings, and addresses
+- ↔️ Swipe right to save a cafe
+- ⬅️ Swipe left to skip a cafe
+- 💾 Saves favorites using localStorage
 - 🚫 Prevents duplicate saves
-- 🗑️ Removes saved cafes
-- 💾 Stores saved cafes using localStorage
-- 📱 Responsive design for desktop and mobile
+- 🗑️ Lets users remove saved cafes
+- 📱 Responsive mobile-friendly design
 - ⚠️ Handles location permission errors
 
 ## 🛠️ Built With
@@ -31,12 +31,12 @@ https://delcafune.github.io/cafe-finder/
 ## 🔎 How It Works
 
 1. Click **Find Cafes Near Me**.
-2. Allow the browser to access your location.
-3. Cafe Curator searches for cafes within a 2 km radius.
-4. Nearby cafes are displayed with their photo, name, address, and rating.
-5. Click **Save Cafe** to save a cafe.
-6. Click **Show Saved Cafes** to view your saved cafes.
-7. Saved cafes can also be removed.
+2. Allow location access.
+3. Cafe Curator searches for nearby cafes within a 2 km radius.
+4. Cafes are shown one at a time, ranked by distance.
+5. Swipe right to save a cafe.
+6. Swipe left to skip it.
+7. Open **Show Saved Cafes** to review or remove saved cafes.
 
 ## 🔒 Privacy
 
